@@ -120,6 +120,12 @@
 
     <!-- Techie -->
 
+    {{ with .Site.Social.srht }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://git.sr.ht/~{{ . }}" rel="me" target="_blank"><i class="fab fa-git-square fa-fw"></i>SourceHut</a>
+    </li>
+    {{ end }}
+
     {{ with .Site.Social.github }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://github.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
